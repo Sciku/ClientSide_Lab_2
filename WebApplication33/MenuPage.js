@@ -7,7 +7,7 @@ function SetHappyHourPrice() {
 
     if (happyhour === hournow) {
         for (var i = 0; i < normalprice.length; i++) {                                                    
-            normalprice[i].innerHTML = +normalprice[i].innerHTML * +0.9;
+            normalprice[i].innerHTML = +normalprice[i].innerHTML * +0.9.toFixed(2);
         }
     }
 }
