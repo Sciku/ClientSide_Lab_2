@@ -1,4 +1,20 @@
 ﻿//happy hour logic:
+function SetHappyHourPrice() {
+    var happyhour = 15;
+    var datenow = new Date();
+    var hournow = datenow.getHours();
+    var normalprice = document.getElementsByClassName("price");
+
+    if (happyhour === hournow) {
+        for (var i = 0; i < normalprice.length; i++) {                                                    
+            normalprice[i].innerHTML = +normalprice[i].innerHTML * +0.9;
+        }
+    }
+}
+document.getElementsByClassName('price').innerHTML = SetHappyHourPrice();
+
+
+
 
 //Method calls:
 
