@@ -1,13 +1,15 @@
-﻿//happy hour logic:
+﻿//HappyHour logic:  DONE
 function SetHappyHourPrice() {
-    var happyhour = 15;
+    var happyhour = 10;
+    var happyhourrebate = 0.8;
     var datenow = new Date();
     var hournow = datenow.getHours();
     var normalprice = document.getElementsByClassName("price");
 
     if (happyhour === hournow) {
         for (var i = 0; i < normalprice.length; i++) {                                                    
-            normalprice[i].innerHTML = +normalprice[i].innerHTML * +0.9.toFixed(2);
+            normalprice[i].innerHTML = (normalprice[i].innerHTML * happyhourrebate).toFixed(2);
+
         }
     }
 }
@@ -16,12 +18,19 @@ document.getElementsByClassName('price').innerHTML = SetHappyHourPrice();
 
 
 
-//Method calls:
+//Method calls:  DONE
 
-
-//Adjust price function: (add .toFixed(2) for 2 decimals)
+//Adjust price function: (add .toFixed(2) for 2 decimals): DONE
 
 /*Add pictures function to span:*/
+function AddPicturesToSpan() {
+    var pictures = document.getElementsByTagName('span');
+    for (var i = 0; i < pictures.length; i++) {
+        pictures[i].innerHTML = "<img src='Images/Hamburger.png8/>";
+
+    }
+}
+document.getElementsByTagName('span').innerHTML = AddPicturesToSpan();
 
 /*Add todays offer function. 
 Make price background red. 
