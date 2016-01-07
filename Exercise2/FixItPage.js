@@ -1,6 +1,5 @@
 ﻿/// <reference path="D:\VS projects\WebApplication33\Exercise2\FixIt.html" />
 
-
 //For each of the following aplicable exercise below you should present a box on the page 
 //with an alert that shows the result when the box is clicked!
 
@@ -12,16 +11,16 @@
 /*3.Play with the properties at page 124 in the book. 
   Use properties creatively to display things at the html page*/
 
-function CreateBox1(propfunction) {
+function createBox(functionofchoice) {
     var borderbox = document.createElement("div");
     borderbox.setAttribute("class", "box");
     var site = document.getElementsByTagName("body");
     site[0].appendChild(borderbox);
-    borderbox.addEventListener('click', propfunction, true);
+    borderbox.addEventListener('click', functionofchoice, true);
 }
-CreateBox1(propertyplay);
+createBox(propertyPlay);
 
-function propertyplay() {
+function propertyPlay() {
     var windowobjectarray = new Array();
     windowobjectarray.push("The height of my window is: " + window.screen.height);
     windowobjectarray.push(" The width of my window is: " + window.screen.width);
@@ -32,96 +31,107 @@ function propertyplay() {
 //4.Add a stylesheet that displays the changed words in fat font and in red.
 
 
-function makeclassforspans(){
+function makeClassForSpans(){
     var myspans = document.getElementsByTagName("span");
 
     for (var i = 0; i < myspans.length; i++) {
         myspans[i].setAttribute("class", "FatAndRed");
     }
 }
-makeclassforspans();
+makeClassForSpans();
 
 //5. PLay with the Methods 
 
-function CreateBox2(objectfunction) {
-    var borderbox2 = document.createElement("div");
-    borderbox2.setAttribute("class", "box2");
-    var site = document.getElementsByTagName("body");
-    site[0].appendChild(borderbox2);
-    borderbox2.addEventListener('click', objectfunction, true);
-}
 
-CreateBox2(methodplay);
+createBox(methodPlay);
 
-function methodplay() {
+function methodPlay() {
     window.alert("Yo! I'm a psychic, I foresee that in your immediate future you will want to print something. But then, you remember that you just want to look at some Thundercats");
     window.print();
     window.open("http://thundercats.wikia.com/wiki/ThunderCats_Wiki");
 }
 //### DOM page 126:###
 //6. Play with the DOM-properties
-function CreateBox3(DOMfunction) {
-    var borderbox3 = document.createElement("div");
-    borderbox3.setAttribute("class", "box3");
-    var site = document.getElementsByTagName("body");
-    site[0].appendChild(borderbox3);
-    borderbox3.addEventListener('mouseover', DOMfunction, true);
-}
 
-CreateBox3(dompropertiesplay);
+createBox(domPropertiesPlay);
 
-function dompropertiesplay() {
-    var DOMspan = document.getElementById("DOMplay");
+function domPropertiesPlay() {
+    var domspan = document.getElementById("DOMplay");
     var documenttitle = document.title;
 
-    DOMspan.innerHTML = "The title of this page is:  " + documenttitle;
+    domspan.innerHTML = "The title of this page is:  " + documenttitle;
 }
 
 //### String objects page 128, 129: ###
 
 //7. Save the the text from the makeMeAnArray-paragraph into an array.
+var paragraphtext = document.getElementById("makeMeAnArray");
+var array = paragraphtext.innerText.split(" ");
+
+
 //8. Use all the string methods and propertys allong with the array
 
-function CreateBox4(arrayfunction) {
-    var borderbox4 = document.createElement("div");
-    borderbox4.setAttribute("class", "box4");
-    var site = document.getElementsByTagName("body");
-    site[0].appendChild(borderbox4);
-    borderbox4.addEventListener('mouseover', arrayfunction, true);
+
+createBox(makeMeAnArrayFunction);
+
+function makeMeAnArrayFunction() {
+    var textfromarray = document.getElementById('makeMeAnArray').innerHTML;
+
+    alert(textfromarray.length);
+    alert(textfromarray.toUpperCase());
+    alert(textfromarray.toLowerCase());
+    alert(textfromarray.charAt(4));
+    alert(textfromarray.indexOf('W'));
+    alert(textfromarray.lastIndexOf('w'));
+    alert(textfromarray.substring(78, 98));
+    alert(textfromarray.split(''));
+    alert(textfromarray.trim());
+    alert(textfromarray.replace('wuf', 'SNUDAN'));
 }
-
-CreateBox4(makemeanarray);
-
-function makemeanarray() {
-    var textfromarrayparagraph = document.getElementById("makeMeAnArray").innerHTML;
-    alert(textfromarrayparagraph.length);
-    alert(textfromarrayparagraph.toUpperCase());
-    alert(textfromarrayparagraph.toLowerCase());
-    alert(textfromarrayparagraph.charAt(4));
-    alert(textfromarrayparagraph.indexOf('s'));
-    alert(textfromarrayparagraph.lastIndexOf('w'));
-    alert(textfromarrayparagraph.substring(78, 98));
-    alert(textfromarrayparagraph.split(''));
-    alert(textfromarrayparagraph.trim());
-    alert(textfromarrayparagraph.replace('wuf', 'SNUDAN'));
-
-}
-
-
-
 
 
 //### String objects page 132: ###
 //9. check if the 4th element in the array is a number
+createBox(isElementNumber);
 
+function isElementNumber() {
+
+    alert(isNaN(array[4]) + "! If false then the element is a number, if true then the element is not a number")
+        
+}
 
 
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
+createBox(roundNumber);
+function roundNumber() {
+
+    alert(array[4] + " rounds to the nearest number, which is: " + Math.round(array[4]));
+}
 //11. replace the 3rd word with PI then roud it to the nearest integer
 
+createBox(replace3rdWord);
+
+function replace3rdWord() {
+    var replaced = array[2].replace(array[2], Math.PI);
+    alert(Math.round(replaced));
+}   
 //### Date object###
 //12. Calculate how many days it's until your birthday and present it.
+
+createBox(calculateDaysUntilBirthday);
+function calculateDaysUntilBirthday() {
+
+    var fullDay = 24 * 60 * 60 * 1000; 
+    var today = new Date();
+    var birthDay = new Date(2016, 10, 2);
+
+    var diffDays = Math.ceil(Math.abs((today.getTime() - birthDay.getTime()) / (fullDay)));
+
+    alert(diffDays);
+
+}
+
 //13. Calculate how many minutes old you are and present it.
 
 /*Bonus exercises:

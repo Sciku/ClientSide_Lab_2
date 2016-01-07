@@ -13,29 +13,3 @@
     float:left;
 }
 
-.box2{
-    border: 2px solid aqua;
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-    background-color:black;
-    float:left;
-}
-
-.box3 {
-    border: 2px solid red;
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-    background-color: yellow;
-    float:left;
-}
-
-.box4 {
-    border: 2px solid yellow;
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-    background-color: red;
-    float:left;
-}
