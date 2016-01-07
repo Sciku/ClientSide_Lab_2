@@ -6,9 +6,9 @@
 //   use attributes name, size, dayOfTheWeek and price(page. 104 in book)
 //   Please use the same html syntax of an article as in exercise1.
 var listOfBurgers = [{
-    name: "Ostasnudan", 
+    name: "Ostasnudan",
     size: "120g",
-    weekday:"monday",
+    weekday: "monday",
     price: 69,
     img: "\Images/Hamburger.png"
 },
@@ -56,7 +56,34 @@ var listOfBurgers = [{
 
 },
 ];
-   
+
+buildTheWebsite(listOfBurgers);
+
+function buildTheWebsite(listOfProducts) {
+    for (var i = 0; i < listOfProducts.length; i++) {
+
+        var image = document.createElement('img');
+        image.src = listOfProducts[i].img;
+
+        var nameOfProductId = document.getElementById('burgersPlace');
+
+        var productBox = document.createElement('article')
+            .appendChild(document.createElement('fieldset'))
+            .appendChild(document.createElement('legend'))
+            .appendChild(document.createTextNode(listOfProducts[i].weekday)).parentNode.parentNode
+            .appendChild(document.createElement('h3'))
+            .appendChild(document.createTextNode(listOfProducts[i].name)).parentNode.parentNode
+
+        productBox.appendChild(document.createElement('span')).appendChild(image)
+        productBox.appendChild(document.createElement('div')).appendChild(document.createTextNode("price: " + listOfProducts[i].price + "$"));
+        productBox.appendChild(document.createElement('div')).appendChild(document.createTextNode("size: " + listOfProducts[i].size));  
+
+        nameOfProductId.appendChild(productBox);
+
+    }
+
+}
+
 //2. create Product objects with constructor notation, 
 //   use the parameters name, size, price, dayOfTheWeek  (page. 108 in book)
 //3. add 7 drinks to the page using Product.
