@@ -31,7 +31,7 @@ function propertyPlay() {
 //4.Add a stylesheet that displays the changed words in fat font and in red.
 
 
-function makeClassForSpans(){
+function makeClassForSpans() {
     var myspans = document.getElementsByTagName("span");
 
     for (var i = 0; i < myspans.length; i++) {
@@ -75,18 +75,20 @@ var array = paragraphtext.innerText.split(" ");
 createBox(makeMeAnArrayFunction);
 
 function makeMeAnArrayFunction() {
-    var textfromarray = document.getElementById('makeMeAnArray').innerHTML;
+    var textfromarray = document.getElementById('makeMeAnArray');
+    var HTMLarray = textfromarray.innerHTML;
+    var textarray = textfromarray.innerText;
 
-    alert(textfromarray.length);
-    alert(textfromarray.toUpperCase());
-    alert(textfromarray.toLowerCase());
-    alert(textfromarray.charAt(4));
-    alert(textfromarray.indexOf('W'));
-    alert(textfromarray.lastIndexOf('w'));
-    alert(textfromarray.substring(78, 98));
-    alert(textfromarray.split(''));
-    alert(textfromarray.trim());
-    alert(textfromarray.replace('wuf', 'SNUDAN'));
+    alert(HTMLarray.length);
+    alert(HTMLarray.toUpperCase());
+    alert(HTMLarray.toLowerCase());
+    alert(textarray.charAt(6));
+    alert(HTMLarray.indexOf('W'));
+    alert(HTMLarray.lastIndexOf('w'));
+    alert(HTMLarray.substring(78, 98));
+    alert(HTMLarray.split(''));
+    alert(HTMLarray.trim());
+    alert(HTMLarray.replace('wuf', 'SNUDAN'));
 }
 
 
@@ -97,13 +99,14 @@ createBox(isElementNumber);
 function isElementNumber() {
 
     alert(isNaN(array[4]) + "! If false then the element is a number, if true then the element is not a number")
-        
+
 }
 
 
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
 createBox(roundNumber);
+
 function roundNumber() {
 
     alert(array[4] + " rounds to the nearest number, which is: " + Math.round(array[4]));
@@ -115,17 +118,16 @@ createBox(replace3rdWord);
 function replace3rdWord() {
     var replaced = array[2].replace(array[2], Math.PI);
     alert(Math.round(replaced));
-}   
+}
 //### Date object###
 //12. Calculate how many days it's until your birthday and present it.
 
 createBox(calculateDaysUntilBirthday);
-function calculateDaysUntilBirthday() {
 
-    var fullDay = 24 * 60 * 60 * 1000; 
+function calculateDaysUntilBirthday() {
+    var fullDay = 24 * 60 * 60 * 1000;
     var today = new Date();
     var birthDay = new Date(2016, 10, 2);
-
     var diffDays = Math.ceil(Math.abs((today.getTime() - birthDay.getTime()) / (fullDay)));
 
     alert(diffDays);
@@ -133,7 +135,16 @@ function calculateDaysUntilBirthday() {
 }
 
 //13. Calculate how many minutes old you are and present it.
+createBox(calculateHowManyMinutesIAm);
 
+function calculateHowManyMinutesIAm() {
+    var today = new Date();
+    var est = new Date(1983, 10, 2);
+    var difference = today.getTime() - est.getTime();
+    var calculateddifference = (difference / (1000 * 60));
+
+    alert('I am: ' + Math.ceil(calculateddifference) + ' minutes old ');
+}
 /*Bonus exercises:
 /### Demo page 141:###
 -Download the code to the book. Wipe the code from the js-file and rewrite it with the help from the book.
