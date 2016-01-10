@@ -25,10 +25,10 @@ function searchFunction() {
 
                     output += "<li>";
                     output += "<p>";
-                    output += val.name;
+                    output += "<strong>" + val.name + "</strong>";
                     output += val.about;
                     output += "</p>";
-                    output += "<img src='Images/" + val.image
+                    output += "<img src='Images/" + val.image;
                     output += "'alt='" + val.name;
                     output += "'/>";
                     output += "</li>";

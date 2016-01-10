@@ -1,95 +1,102 @@
 ﻿body {
-    background-color:darkolivegreen;
+    background-color: darkolivegreen;
     color: white;
-
 }
-              h1{
-                  margin-left:610px;
-              }
-#searcharea{
+
+h1 {
+    margin-left: 750px;
+}
+
+#searcharea {
     margin: 0 auto;
-    text-align:center;
-    background-color:darkslategrey;
+    text-align: center;
+    background-color: darkslategrey;
     width: 30%;
-    border:3px solid aqua;
+    border: 6px dotted yellow;
     padding: 10px;
-     
-}
-span{
-    margin-left: 440px;
 }
 
-#searcharea label{
+.checkBox {
+    margin-left: 700px;
+}
+
+#searcharea label {
     font: bold 1.3em Arial;
     text-transform: uppercase;
 }
 
-#update{
+#update {
     margin: 5px auto;
     width: 80%;
     color: grey;
 }
-#update ul{
-    list-style:none;
-    margin: 0;
-    padding: 0;
-}
-    #update ul li {
-        width: 100%;
-        padding: 0 20px;
+
+    #update ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #update ul li {
+            width: 100%;
+            padding: 0 20px;
+            background-color: #eee;
+            padding-bottom: 10px;
+            height: 100px;
+            overflow: hidden;
+            border-bottom: 1px dotted #ccc;
+            -moz-animation: goof 1s;
+            -o-animation: goof 1s;
+            -webkit-animation: goof 1s;
+            animation: goof 1s;
+            -moz-transition: height 0.3s ease-out;
+            -o-transition: height 0.3s ease-out;
+            -webkit-transition: height 0.3s ease-out;
+            transition: height 0.3s ease-out;
+        }
+
+    #update li:hover {
         background-color: #eee;
-        padding-bottom: 10px;
-        height: 100px;
-        overflow: hidden;
-        border-bottom: 1px dotted #ccc;
-        -moz-animation: goof 1s;
-        -o-animation: goof 1s;
-        -webkit-animation: goof 1s;
-        animation: goof 1s;
-        -moz-transition: height 0.3s ease-out;
-        -o-transition: height 0.3s ease-out;
-        -webkit-transition: height 0.3s ease-out;
-        transition: height 0.3s ease-out;
-    } 
-#update li:hover{
-    background-color: #eee;
-    height: 250px;
-    min-height: 100px;
-    overflow: visible;
-    border-radius:10px;
-    margin-bottom:15px;
-}
+        height: 250px;
+        min-height: 100px;
+        overflow: visible;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
 
-#update img{
-    float: left;
-    width: 80px;
-    margin-left: 10px;
-    border-radius: 10px;
-}
-@-moz-keyframes goof{
-    0%{
+    #update img {
+        float: left;
+        width: 80px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+
+@-moz-keyframes goof {
+    0% {
         opacity: 0.3;
     }
-    100%{
-        opacity:1.0;
+
+    100% {
+        opacity: 1.0;
     }
 }
 
-@-webkit-keyframes goof{
-    0%{
+@-webkit-keyframes goof {
+    0% {
         opacity: 0.3;
     }
-    100%{
-        opacity:1.0;
+
+    100% {
+        opacity: 1.0;
     }
 }
 
-@keyframes goof{
-    0%{
+@keyframes goof {
+    0% {
         opacity: 0.3;
     }
-    100%{
-        opacity:1.0;
+
+    100% {
+        opacity: 1.0;
     }
 }
-

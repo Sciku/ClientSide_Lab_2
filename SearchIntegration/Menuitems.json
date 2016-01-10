@@ -32,7 +32,7 @@
     "image": "Hamburger.png"
   },
   {
-    "name": "Spiddekage burgare",
+    "name": "Spiddekage burgare: ",
     "size": "10g",
     "price": "499",
     "about": "Bästa burgaren i stan! Om man är från Skaune.",
@@ -40,7 +40,7 @@
     "image": "Hamburger.png"
   },
   {
-    "name": "Festasnudan",
+    "name": "Festasnudan: ",
     "size": "450g",
     "price": "99",
     "about": "Bästa burgaren i stan! Om man känner sig spralling under fötterna.",
@@ -48,7 +48,7 @@
     "image": "Hamburger.png"
   },
   {
-    "name": "Bakisräddaren",
+    "name": "Bakisräddaren: ",
     "size": "120g",
     "price": "39",
     "about": "Bästa burgaren i stan! Om.......man.....är.....bakis......",
@@ -56,7 +56,7 @@
     "image": "Hamburger.png"
   },
   {
-    "name": "Jägerbomb",
+    "name": "Jägerbomb: ",
     "size": "6cl",
     "price": "69",
     "about": "Bästa drinken i världen! Om man är nyss fyllda 18 bast.",
@@ -64,7 +64,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Halsrensarn",
+    "name": "Halsrensarn: ",
     "size": "20cl",
     "price": "89",
     "about": "Bästa drinken i världen! När man känner sig krasslig i strupen.",
@@ -72,7 +72,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Blinda fläcken",
+    "name": "Blinda fläcken: ",
     "size": "2cl",
     "price": "55",
     "about": "Bästa drinken i världen! Om man är på en Blind-date",
@@ -80,7 +80,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Vit ryss",
+    "name": "Vit ryss: ",
     "size": "4cl",
     "price": "69",
     "about": "Bästa drinken i världen! Om man gillar kallt kaffe och grädde med sprit i.",
@@ -88,7 +88,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Svart ryss",
+    "name": "Svart ryss: ",
     "size": "4cl",
     "price": "499",
     "about": "Bästa drinken i världen! Om man bara gillar kaffe med socker och sprit.",
@@ -96,7 +96,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Ryss",
+    "name": "Ryss: ",
     "size": "100cl",
     "price": "99",
     "about": "Bästa drinken i världen. Om man bara vill ha sprit.",
@@ -104,7 +104,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Green Dragon",
+    "name": "Green Dragon: ",
     "size": "8cl",
     "price": "39",
     "about": "Bästa drinken i världen. Move like a dragon, hit like a spear!",
@@ -112,7 +112,7 @@
     "image": "Drink.png"
   },
   {
-    "name": "Margharita",
+    "name": "Margharita: ",
     "size": "barn",
     "price": "69",
     "about": "Bästa pizza i stada. Om man gillar ost.",
@@ -120,7 +120,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Vesuvio",
+    "name": "Vesuvio: ",
     "size": "standard",
     "price": "89",
     "about": "Bästa pizza i stada! Om man gillar skinka.",
@@ -128,7 +128,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Capricciosa",
+    "name": "Capricciosa: ",
     "size": "standard",
     "price": "55",
     "about": "Bästa pizza i stada! Om man känner sig lite svampig.",
@@ -136,7 +136,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Kebabpizza",
+    "name": "Kebabpizza: ",
     "size": "famlije",
     "price": "69",
     "about": "Bästa pizza i stada! Om man vill äta blanddjur.",
@@ -144,7 +144,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Calzone",
+    "name": "Calzone: ",
     "size": "standard",
     "price": "499",
     "about": "Bästa pizza i stada! Om man inte vill se onyttigheten.",
@@ -152,7 +152,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Pommespizza",
+    "name": "Pommespizza: ",
     "size": "familje",
     "price": "99",
     "about": "Bästa pizza i stada! Om man gillar pommes.",
@@ -160,7 +160,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Turtles special",
+    "name": "Turtles special: ",
     "size": "barn",
     "price": "39",
     "about": "Bästa pizza i stada. Om ens pappa/tränare är en råtta på riktigt.",
@@ -168,7 +168,7 @@
     "image": "Pizza.png"
   },
   {
-    "name": "Ost",
+    "name": "Ost: ",
     "size": "L",
     "price": "69",
     "about": "En tradig macka. Om man inte gillar ost.",
@@ -176,7 +176,7 @@
     "image": "Subs.png"
   },
   {
-    "name": "Skinka",
+    "name": "Skinka: ",
     "size": "L",
     "price": "89",
     "about": "En tradig macka. Om man inte gillar skinka.",
@@ -184,7 +184,7 @@
     "image": "Subs.png"
   },
   {
-    "name": "Ost & Skinka",
+    "name": "Ost & Skinka: ",
     "size": "XL",
     "price": "55",
     "about": "En tradig macka. Om man varken gillar ost eller skinka.",
@@ -192,7 +192,7 @@
     "image": "Subs.png"
   },
   {
-    "name": "Skinka & Ost",
+    "name": "Skinka & Ost: ",
     "size": "XL",
     "price": "69",
     "about": "En tradig macka. Om man varken gillar skinka eller ost.",
@@ -200,7 +200,7 @@
     "image": "Subs.png"
   },
   {
-    "name": "Ostskinka",
+    "name": "Ostskinka: ",
     "size": "XXL",
     "price": "499",
     "about": "En tradig macka. Om man inte vill ha ost kombinerat med skinka.",
@@ -208,7 +208,7 @@
     "image": "Subs.png"
   },
   {
-    "name": "Skinkost",
+    "name": "Skinkost: ",
     "size": "XXL",
     "price": "99",
     "about": "En tradig macka. Om man inte vill skinka kombinerat med ost.",
@@ -216,7 +216,7 @@
     "image": "Subs.png"
   },
   {
-    "name": "Leverpastej",
+    "name": "Leverpastej: ",
     "size": "M",
     "price": "39",
     "about": "En tradig macka. Om man inte gillar nermosad lever från diverse djur.",
