@@ -1,6 +1,6 @@
 ﻿body {
-    background-color:black;
-    color: whitesmoke;
+    background-color:darkolivegreen;
+    color: white;
 
 }
               h1{
@@ -27,7 +27,7 @@ span{
 #update{
     margin: 5px auto;
     width: 80%;
-    color: darkslategray;
+    color: grey;
 }
 #update ul{
     list-style:none;
@@ -52,7 +52,7 @@ span{
         transition: height 0.3s ease-out;
     } 
 #update li:hover{
-    background-color: #fffce5;
+    background-color: #eee;
     height: 250px;
     min-height: 100px;
     overflow: visible;
